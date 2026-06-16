@@ -3,11 +3,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My First Page</title>
+  <link rel="stylesheet" href="./Start.css">
 </head>
 <body>
   <section>
     <nav>
-      <img src="./HTML Practise Assets/FES.svg" alt="FrontEnd Simplified">
+      <img src="./HTML Practise Assets/FES.svg" class="logo" alt="FrontEnd Simplified">
       <ul>
         <li><a href="#About">About</a></li>
         <li><a href="#Discord">Discord</a></li>
@@ -15,10 +16,11 @@
       </ul>
     </nav>
     <header>
-      <div>
-        <h1>Best place to learn frontend</h1>
-        <p>Go from being an absolute beginner to pro with a simplified process</p>
-        <button>Start Now</button>
+      <div class="row"></div>
+      <div class="home-description">
+        <h1> Best place to learn frontend</h1>
+        <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p>
+        <button class="home-description-button">Start Now</button>
       </div>
       <figure>
         <img src="./HTML Practise Assets/laptop.png" alt="Home Page Image">
@@ -29,21 +31,29 @@
   <main>
     <section id="About">
       <h2>About</h2>
-      <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aut veritatis. Neque id temporibus nemo, facere tempore corrupti quasi atque?</p>
+      <div class="row">
+      <div class="section-description">
+      <div class="section-description-wrapper">
+      <p class="section-description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aut veritatis. Neque id temporibus nemo, facere tempore corrupti quasi atque?</p>
       </div>
-      <figure>
+      <figure class="about-img-wrapper">
         <img src="./HTML Practise Assets/about.jpg" alt="">
       </figure>
+      </div>
+      </div>
     </section>
 
     <section id="Discord">
       <h2>Discord</h2>
-      <figure>
+      <div class="row">
+      <div class="section-description">
+      <figure class="about-img-wrapper">
         <img src="./HTML Practise Assets/discord.png" alt="Discord">
       </figure>
-      <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aut veritatis. Neque id temporibus nemo, facere tempore corrupti quasi atque?</p>
+      <div class="section-description-wrapper">
+      <p class="section-description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aut veritatis. Neque id temporibus nemo, facere tempore corrupti quasi atque?</p>
+      </div>
+      </div>
       </div>
     </section>
 
@@ -51,9 +61,9 @@
       <h2>Contact</h2>
       <form action="">
         <span>Email</span>
-        <input type="text" placeholder="jane@example.com">
+        <input type="email" placeholder="jane@example.com">
         <span>Message</span>
-        <textarea name="" id=""></textarea>
+        <textarea type="text" placeholder="Cool website, lets get connected"></textarea>
 
         <input type="submit">
 
@@ -64,12 +74,12 @@
   </main>
 
   <footer>
-    <img src="./HTML Practise Assets/FES.svg" alt="">
-    <div>
-      <a href="#About">About</a>
-      <a href="#Discord">Discord</a>
-      <a href="#Contact">Contact</a>
-      <a href="">Courses</a>
+    <img class="footer-logo" src="./HTML Practise Assets/FES.svg" alt="">
+    <div class="footer-links">
+      <a class="footer=link" href="#About">About</a>
+      <a class="footer=link" href="#Discord">Discord</a>
+      <a class="footer=link" href="#Contact">Contact</a>
+      <a class="footer=link" href="">Courses</a>
     </div>
     <p>Copyright FrontEnd Gerard</p>
   </footer>
